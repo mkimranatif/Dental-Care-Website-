@@ -29,8 +29,7 @@ export default function Hero() {
       id="home"
       className="relative pt-32 pb-20 min-h-screen flex items-center"
       style={{
-        backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/placeholder.svg?height=1080&width=1920')",
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/hero-dental-office.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

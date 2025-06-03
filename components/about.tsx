@@ -29,7 +29,7 @@ export default function About() {
           >
             <div className="rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=600&width=800&text=Dentist+with+Patient"
+                src="/images/about-dental-team.jpg"
                 alt="Dental Team"
                 width={800}
                 height={600}

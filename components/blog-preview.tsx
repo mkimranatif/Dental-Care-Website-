@@ -11,16 +11,19 @@ const blogPosts = [
     title: "Essential Tips for Daily Dental Care",
     excerpt: "Learn the best practices for maintaining optimal oral health...",
     link: "#",
+    image: "/images/dental-care-tips.jpg",
   },
   {
     title: "Advanced Dental Technologies",
     excerpt: "Discover how modern technology is revolutionizing dental care...",
     link: "#",
+    image: "/images/dental-technology.jpg",
   },
   {
     title: "Foods That Promote Dental Health",
     excerpt: "The right diet can significantly improve your oral health...",
     link: "#",
+    image: "/images/healthy-foods-dental.jpg",
   },
 ]
 
@@ -52,7 +55,7 @@ export default function BlogPreview() {
               <Card className="h-full overflow-hidden shadow-lg border-0">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={`/placeholder.svg?height=300&width=400&text=${post.title.split(" ").slice(0, 2).join("+")}`}
+                    src={post.image || "/placeholder.svg"}
                     alt={post.title}
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-110"

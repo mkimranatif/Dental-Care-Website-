@@ -10,16 +10,19 @@ const testimonials = [
     text: "The best dental experience I've ever had. Professional staff and state-of-the-art facilities.",
     name: "Sarah Johnson",
     info: "Regular Patient since 2020",
+    image: "/images/patient-sarah-johnson.jpg",
   },
   {
     text: "Transformed my smile completely. I couldn't be happier with the results!",
     name: "Michael Brown",
     info: "Cosmetic Dentistry Patient",
+    image: "/images/patient-michael-brown.jpg",
   },
   {
     text: "Excellent care and attention to detail. The whole team is fantastic!",
     name: "Emma Davis",
     info: "Dental Implant Patient",
+    image: "/images/patient-emma-davis.jpg",
   },
 ]
 
@@ -53,7 +56,7 @@ export default function Testimonials() {
                   <div className="mb-6 relative">
                     <div className="w-20 h-20 rounded-full overflow-hidden">
                       <Image
-                        src={`/placeholder.svg?height=100&width=100&text=${testimonial.name.charAt(0)}`}
+                        src={testimonial.image || "/placeholder.svg"}
                         alt={testimonial.name}
                         width={100}
                         height={100}

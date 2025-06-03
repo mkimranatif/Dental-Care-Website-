@@ -26,6 +26,25 @@ const beforeAfterCases = [
   },
 ]
 
+const beforeAfterImages = {
+  "Teeth Whitening": {
+    before: "/images/whitening-before.jpg",
+    after: "/images/whitening-after.jpg",
+  },
+  "Dental Implants": {
+    before: "/images/implants-before.jpg",
+    after: "/images/implants-after.jpg",
+  },
+  Veneers: {
+    before: "/images/veneers-before.jpg",
+    after: "/images/veneers-after.jpg",
+  },
+  "Invisalign Treatment": {
+    before: "/images/invisalign-before.jpg",
+    after: "/images/invisalign-after.jpg",
+  },
+}
+
 export default function BeforeAfterGallery() {
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -72,7 +91,7 @@ export default function BeforeAfterGallery() {
                       Before
                     </div>
                     <Image
-                      src={`/placeholder.svg?height=400&width=600&text=Before+${beforeAfterCases[activeIndex].title}`}
+                      src={beforeAfterImages[beforeAfterCases[activeIndex].title].before || "/placeholder.svg"}
                       alt={`Before ${beforeAfterCases[activeIndex].title}`}
                       fill
                       className="object-cover"
@@ -90,7 +109,7 @@ export default function BeforeAfterGallery() {
                       After
                     </div>
                     <Image
-                      src={`/placeholder.svg?height=400&width=600&text=After+${beforeAfterCases[activeIndex].title}`}
+                      src={beforeAfterImages[beforeAfterCases[activeIndex].title].after || "/placeholder.svg"}
                       alt={`After ${beforeAfterCases[activeIndex].title}`}
                       fill
                       className="object-cover"

@@ -85,7 +85,7 @@ export default function EnhancedWhyChooseUs() {
                 className="rounded-lg overflow-hidden shadow-xl"
               >
                 <Image
-                  src="/placeholder.svg?height=400&width=600&text=Modern+Dental+Office"
+                  src="/images/modern-dental-office-interior.jpg"
                   alt="Modern dental office"
                   width={600}
                   height={400}

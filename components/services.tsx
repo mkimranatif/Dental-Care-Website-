@@ -10,16 +10,19 @@ const services = [
     icon: <Tooth className="w-16 h-16 text-blue-600" />,
     title: "General Dentistry",
     description: "Comprehensive dental care including cleanings, fillings, and preventive treatments.",
+    image: "/images/general-dentistry.jpg",
   },
   {
     icon: <Smile className="w-16 h-16 text-blue-600" />,
     title: "Cosmetic Dentistry",
     description: "Transform your smile with professional whitening, veneers, and aesthetic procedures.",
+    image: "/images/cosmetic-dentistry.jpg",
   },
   {
     icon: <UserCheck className="w-16 h-16 text-blue-600" />,
     title: "Dental Implants",
     description: "Restore your smile with permanent tooth replacement solutions.",
+    image: "/images/dental-implants.jpg",
   },
 ]
 
@@ -52,7 +55,7 @@ export default function Services() {
               <Card className="h-full shadow-lg border-0 overflow-hidden">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={`/placeholder.svg?height=300&width=400&text=${service.title}`}
+                    src={service.image || "/placeholder.svg"}
                     alt={service.title}
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-110"

@@ -15,6 +15,7 @@ const dentists = [
       instagram: "#",
       linkedin: "#",
     },
+    image: "/images/dr-sarah-williams.jpg",
   },
   {
     name: "Dr. Michael Chen",
@@ -25,6 +26,7 @@ const dentists = [
       instagram: "#",
       linkedin: "#",
     },
+    image: "/images/dr-michael-chen.jpg",
   },
   {
     name: "Dr. Jessica Rodriguez",
@@ -35,6 +37,7 @@ const dentists = [
       instagram: "#",
       linkedin: "#",
     },
+    image: "/images/dr-jessica-rodriguez.jpg",
   },
   {
     name: "Dr. Robert Johnson",
@@ -45,6 +48,7 @@ const dentists = [
       instagram: "#",
       linkedin: "#",
     },
+    image: "/images/dr-robert-johnson.jpg",
   },
 ]
 
@@ -80,7 +84,7 @@ export default function TeamSection() {
               <Card className="h-full overflow-hidden shadow-lg border-0 group">
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src={`/placeholder.svg?height=300&width=300&text=${dentist.name}`}
+                    src={dentist.image || "/placeholder.svg"}
                     alt={dentist.name}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
