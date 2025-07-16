@@ -14,6 +14,13 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const scrollToAppointment = () => {
+    const appointmentSection = document.getElementById("home")
+    if (appointmentSection) {
+      appointmentSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -82,7 +89,9 @@ export default function Header() {
             </li>
           </ul>
 
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white">Book Appointment</Button>
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white" onClick={scrollToAppointment}>
+            Book Appointment
+          </Button>
         </div>
 
         <div className="md:hidden flex items-center">
@@ -96,7 +105,9 @@ export default function Header() {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </Button>
 
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white">Book</Button>
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white" onClick={scrollToAppointment}>
+            Book
+          </Button>
         </div>
       </nav>
 
