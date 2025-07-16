@@ -37,7 +37,7 @@ const dentists = [
       instagram: "#",
       linkedin: "#",
     },
-    image: "/images/dr-jessica-rodriguez.jpg",
+    image: "/images/dr-jessica-rodriguez-new.jpg",
   },
   {
     name: "Dr. Robert Johnson",

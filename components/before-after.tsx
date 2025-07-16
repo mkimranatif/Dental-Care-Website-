@@ -28,20 +28,20 @@ const beforeAfterCases = [
 
 const beforeAfterImages = {
   "Teeth Whitening": {
-    before: "/images/whitening-before.jpg",
-    after: "/images/whitening-after.jpg",
+    before: "/images/yellow-stained-teeth-before.jpg",
+    after: "/images/white-teeth-after-whitening.jpg",
   },
   "Dental Implants": {
-    before: "/images/implants-before.jpg",
-    after: "/images/implants-after.jpg",
+    before: "/images/missing-teeth-gap-before.jpg",
+    after: "/images/complete-smile-implants-after.jpg",
   },
   Veneers: {
-    before: "/images/veneers-before.jpg",
-    after: "/images/veneers-after.jpg",
+    before: "/images/chipped-damaged-teeth-before.jpg",
+    after: "/images/perfect-veneers-smile-after.jpg",
   },
   "Invisalign Treatment": {
-    before: "/images/invisalign-before.jpg",
-    after: "/images/invisalign-after.jpg",
+    before: "/images/crooked-misaligned-teeth-before.jpg",
+    after: "/images/straight-aligned-teeth-after.jpg",
   },
 }
 
